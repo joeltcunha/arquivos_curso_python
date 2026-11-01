@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            background-color: aquamarine;
+            border: #000 solid 2px;
+            height: 100%;
+        }
+        .aside_bar{
+            display: block;
+            justify-content: start;
+            flex-direction: column;
+            width: 200px;
+            background-color: burlywood;
+        }
+        .bemvindo{
+            height: 100px;
+            padding: 20px 10px;
+            margin: 5px;
+            border: crimson dashed 2px;
+            align-content: center;
+        }
+        @media (max-width: 600px) {
+            .container{
+
+
+            }
+
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="aside_bar">
+            <div class="bemvindo">
+                <a href="#">Bem Vindo Fulano de Tal</a>
+            </div>
+            <div class="cadastrar-livro">
+                <a href="#">Cadastrar LIvro</a>
+            </div>
+        </div>
+        <div class="main_container">
+            <h3>Cadastro de Livros</h3>
+            <form action="#">
+                <label for="nome">Nome</label><br>
+                <input type="text">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
